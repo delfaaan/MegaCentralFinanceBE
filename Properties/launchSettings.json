@@ -1,41 +1,56 @@
 ﻿{
-  "$schema": "http://json.schemastore.org/launchsettings.json",
-  "iisSettings": {
-    "windowsAuthentication": false,
-    "anonymousAuthentication": true,
-    "iisExpress": {
-      "applicationUrl": "http://localhost:5350",
-      "sslPort": 44336
-    }
-  },
-  "profiles": {
-    "http": {
-      "commandName": "Project",
-      "dotnetRunMessages": true,
-      "launchBrowser": true,
-      "launchUrl": "swagger",
-      "applicationUrl": "http://localhost:5282",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
-    },
-    "https": {
-      "commandName": "Project",
-      "dotnetRunMessages": true,
-      "launchBrowser": true,
-      "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:7072;http://localhost:5282",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
-    },
-    "IIS Express": {
-      "commandName": "IISExpress",
-      "launchBrowser": true,
-      "launchUrl": "swagger",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
-    }
-  }
+	"$schema": "http://json.schemastore.org/launchsettings.json",
+	"iisSettings": {
+		"windowsAuthentication": false,
+		"anonymousAuthentication": true,
+		"iisExpress": {
+			"applicationUrl": "http://localhost:5350",
+			"sslPort": 44336
+		}
+	},
+	"profiles": {
+		"http": {
+			"commandName": "Project",
+			"dotnetRunMessages": true,
+			"launchBrowser": true,
+			"launchUrl": "swagger",
+			"applicationUrl": "http://localhost:5282",
+			"environmentVariables": {
+				"ASPNETCORE_ENVIRONMENT": "Development",
+				"ConnectionStrings": "Server=localhost\\SQLEXPRESS;Database=mcf;Integrated Security=True;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=True;",
+				"ConnectionStrings:DefaultConnection": "Server=localhost\\SQLEXPRESS;Database=mcf;Integrated Security=True;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=True;",
+				"Jwt:Issuer": "MegaCentralFinanceApi",
+				"Jwt:Audience": "MegaCentralFinanceWebApp",
+				"Jwt:Key": "MegaCentralFinanceSuperDuperSecretKey"
+			}
+		},
+		"https": {
+			"commandName": "Project",
+			"dotnetRunMessages": true,
+			"launchBrowser": true,
+			"launchUrl": "swagger",
+			"applicationUrl": "https://localhost:7072;http://localhost:5282",
+			"environmentVariables": {
+				"ASPNETCORE_ENVIRONMENT": "Development",
+				"ConnectionStrings": "Server=localhost\\SQLEXPRESS;Database=mcf;Integrated Security=True;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=True;",
+				"ConnectionStrings:DefaultConnection": "Server=localhost\\SQLEXPRESS;Database=mcf;Integrated Security=True;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=True;",
+				"Jwt:Issuer": "MegaCentralFinanceApi",
+				"Jwt:Audience": "MegaCentralFinanceWebApp",
+				"Jwt:Key": "MegaCentralFinanceSuperDuperSecretKey"
+			}
+		},
+		"IIS Express": {
+			"commandName": "IISExpress",
+			"launchBrowser": true,
+			"launchUrl": "swagger",
+			"environmentVariables": {
+				"ASPNETCORE_ENVIRONMENT": "Development",
+				"ConnectionStrings": "Server=localhost\\SQLEXPRESS;Database=mcf;Integrated Security=True;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=True;",
+				"ConnectionStrings:DefaultConnection": "Server=localhost\\SQLEXPRESS;Database=mcf;Integrated Security=True;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=True;",
+				"Jwt:Issuer": "MegaCentralFinanceApi",
+				"Jwt:Audience": "MegaCentralFinanceWebApp",
+				"Jwt:Key": "MegaCentralFinanceSuperDuperSecretKey"
+			}
+		}
+	}
 }
